@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Fokker-S-11/s11-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Fokker-S-11/Sounds/s11-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Fokker-S-11/Models/s11.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>1.00</setting> <!-- 20 deg -->
+    </flaps>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>s11</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/s11-menu.xml"/>
+
+</sim>
+ 
+  <input>
+    <keyboard include="Nasal/s11-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <s11>
+      <file>Aircraft/Fokker-S-11/Nasal/doors.nas</file>
+      <file>Aircraft/Fokker-S-11/Nasal/light.nas</file>
+      <file>Aircraft/Fokker-S-11/Nasal/liveries.nas</file>
+      <file>Aircraft/Fokker-S-11/Nasal/immat.nas</file>
+    </s11>
+  </nasal>
+   
+</PropertyList>
